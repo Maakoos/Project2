@@ -1,0 +1,11 @@
+@mixin mq($breakpoint) {
+  $size: map-get(
+    $map: $breakpoints,
+    $key: $breakpoint,
+  );
+  @if ($size) {
+    @media #{$size} {
+      @content;
+    }
+  }
+}

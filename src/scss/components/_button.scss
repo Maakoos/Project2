@@ -1,0 +1,22 @@
+.button {
+  background: transparent;
+
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  /* Poniżej są do headera jak by co to zmienimy i damu mu oddzielny modifajer */
+  padding: 15px 45px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
