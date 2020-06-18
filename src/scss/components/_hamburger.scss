@@ -1,0 +1,49 @@
+.hamburger {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__line {
+    position: relative;
+    // display: block;
+    margin-left: auto;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    transition: background 0.1s linear;
+    z-index: 100;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #000;
+      transition: all 0.2s linear;
+    }
+
+    &::after {
+      top: 10px;
+    }
+
+    &--isOpen {
+      background: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotateZ(45deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotateZ(-45deg);
+      }
+    }
+  }
+}
