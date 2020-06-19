@@ -1,0 +1,51 @@
+.chefs {
+  text-align: center;
+
+  &__cardsBox {
+    /*  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 60px;
+    margin-top: 80px;
+  }
+
+  &__card {
+    /* flex-basis: 45%;
+    min-width: 310px; */
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  &__profession {
+    display: block;
+    margin-bottom: 30px;
+    color: #b3b3b3;
+    font-size: 18px;
+    font-family: $primaryFont;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__socialBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    color: $primaryColor;
+  }
+
+  p + p {
+    margin-top: 40px;
+  }
+}
