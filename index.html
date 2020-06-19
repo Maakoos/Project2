@@ -10,12 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <h1 class="header__welcome">Welcome to Meal</h1>
       <button class="button">Reserve a table</button>
     </header>
+
+    <!-- Navigation -->
     <nav class="navigation">
       <a href="" class="navigation__logo">M</a>
       <!-- <span class="navigation__hamburger"></span> -->
@@ -38,5 +49,53 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Food -->
+    <section class="food">
+      <div class="container">
+        <h2 class="heading">Find your best food</h2>
+        <p class="description">
+          Professional staff Our highly trained and experienced cooks are the
+          experts in the production
+        </p>
+
+        <div class="food__itemBox">
+          <div class="food__img food__img--first"></div>
+          <div class="food__item">
+            <span class="food__subheading">Vegies</span>
+            <h3 class="heading heading--small">Beef Empanadas</h3>
+            <p class="description">
+              Separated they live in Bookmarksgrove right at the coast of the
+              Semantics, a large language ocean.
+            </p>
+            <a href="" class="food__link">Learn more</a>
+          </div>
+
+          <div class="food__img food__img--second"></div>
+          <div class="food__item">
+            <span class="food__subheading">Food</span>
+            <h3 class="heading heading--small">Buttermilk chicken jibaritos</h3>
+            <p class="description">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+            <a href="" class="food__link">Learn more</a>
+          </div>
+
+          <div class="food__img food__img--third"></div>
+          <div class="food__item">
+            <span class="food__subheading">Food</span>
+            <h3 class="heading heading--small">
+              Chicken chimichurri croquettes
+            </h3>
+            <p class="description">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic life.
+            </p>
+            <a href="" class="food__link">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,114 @@
+.food {
+  text-align: center;
+
+  &__itemBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    margin: 85px 0;
+    padding: 0 30px;
+  }
+
+  &__img {
+    display: none;
+    position: relative;
+    background-size: cover;
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    &--first {
+      background-image: url("/public/food_1.jpg");
+
+      &::after {
+        top: 50px;
+        right: 0;
+
+        border-top: 20px solid transparent;
+        border-right: 20px solid #fff;
+        border-bottom: 20px solid transparent;
+      }
+    }
+
+    &--second {
+      background-image: url("/public/food_2.jpg");
+
+      &::after {
+        bottom: 0;
+        left: 50%;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #fff;
+        transform: translateX(-50%);
+      }
+    }
+
+    &--third {
+      background-image: url("/public/food_3.jpg");
+
+      &::after {
+        top: 150px;
+        left: 0;
+        border-top: 20px solid transparent;
+        border-left: 20px solid #fff;
+        border-bottom: 20px solid transparent;
+      }
+    }
+  }
+
+  &__subheading {
+    display: block;
+    margin-bottom: 10px;
+    color: $primaryColor;
+    font-size: 14px;
+    font-family: $secondaryFont;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 30px;
+    color: $txtColor;
+    font-size: 12px;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: transform 0.2s linear;
+
+    &::after {
+      content: "\f061";
+      margin-left: 5px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      transition: transform 0.2s linear;
+      display: inline-block;
+    }
+
+    &:hover {
+      transform: translateX(-5px);
+    }
+
+    &:hover::after {
+      transform: translateX(10px);
+    }
+  }
+}
