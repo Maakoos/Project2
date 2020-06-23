@@ -1,0 +1,84 @@
+.menu {
+  &__btnsBox {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    background: transparent;
+    // color: $primaryColor;
+    color: gray;
+    font-size: 16px;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &--isActive {
+      color: $primaryColor;
+      border-color: $primaryColor;
+    }
+  }
+
+  &__list {
+    margin-top: 50px;
+    list-style: none;
+    display: none;
+
+    &--isVisible {
+      display: block;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 50px auto 0;
+      width: 60%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__img {
+    margin-bottom: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+  }
+
+  &__cardTxt {
+    @media (min-width: 1024px) {
+      margin: 0 20px;
+    }
+  }
+
+  &__price {
+    display: block;
+    margin-top: 20px;
+    color: $primaryColor;
+    font-size: 20px;
+    font-family: $primaryFont;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+    }
+  }
+}

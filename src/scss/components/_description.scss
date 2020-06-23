@@ -3,4 +3,9 @@
   font-size: 20px;
   font-weight: 300;
   font-family: $primaryFont;
+  line-height: 1.8;
+
+  &--center {
+    text-align: center;
+  }
 }

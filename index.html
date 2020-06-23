@@ -182,13 +182,182 @@
     </section>
 
     <!-- Menu -->
-    <!-- <section class="menu">
+    <section class="menu">
       <div class="container">
-        <h2 class="heading">Menu</h2>
-        <div class="description">
+        <h2 class="heading heading--center">Menu</h2>
+        <p class="description description--center">
           Free Website Template For Restaurants Made by Colorlib. Change later
+        </p>
+        <div class="menu__btnsBox">
+          <button
+            class="menu__btn menu__btn--isActive"
+            data-category="breakfast"
+          >
+            Breakfast
+          </button>
+          <button class="menu__btn" data-category="brunch">Brunch</button>
+          <button class="menu__btn" data-category="dinner">Dinner</button>
         </div>
+
+        <ul class="menu__list menu__list--isVisible" data-category="breakfast">
+          <li class="menu__item">
+            <img src="./public/food_1.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Warm spinach dip & chips</h3>
+              <p class="description">
+                Spinach and artichokes in a creamy cheese dip with warm tortilla
+                chips & salsa.
+              </p>
+            </div>
+            <span class="menu__price">$10.49</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_2.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Key wast machos</h3>
+              <p class="description">
+                Crisp tortilla and plantain chips covered with lightly spiced
+                ground beef, melted cheese, pickled jalapeños, guacamole, sour
+                cream and salsa.
+              </p>
+            </div>
+            <span class="menu__price">$11.99</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_3.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Crispy onions rings</h3>
+              <p class="description">
+                A heaping mountain of rings, handmade with Panko breading and
+                shredded coconut flakes.
+              </p>
+            </div>
+            <span class="menu__price">$9.49</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_1.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Lobster & shrimp quesadilla</h3>
+              <p class="description">
+                Lobster and tender shrimp, with onions, sweet peppers, spinach
+                and our three cheese blend. Griddled and served with tomato
+                salsa and sour cream.
+              </p>
+            </div>
+            <span class="menu__price">$13.99</span>
+          </li>
+        </ul>
+
+        <ul class="menu__list" data-category="brunch">
+          <li class="menu__item">
+            <img src="./public/food_2.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Lobster Rolls</h3>
+              <p class="description">
+                A traditional Maine favorite. Chunks of fresh caught lobster,
+                blended with light mayonnaise and our secret ingredients. Served
+                on toast with lettuce & tomato.
+              </p>
+            </div>
+            <span class="menu__price">$12.49</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_1.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Wrap Cold Cut</h3>
+              <p class="description">
+                Turkey, ham, and salami, cheese, lettuce, tomato, and your
+                choice of condiments, all wrapped in a flour tortilla.
+              </p>
+            </div>
+            <span class="menu__price">$10.49</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_3.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Western omlets</h3>
+              <p class="description">
+                Three eggs stuffed with peppers, onions, and cheese. Cooked to
+                perfection and topped with fresh tomatoes.
+              </p>
+            </div>
+            <span class="menu__price">$9.99</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_2.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">TATER’S & TOAST</h3>
+              <p class="description">
+                Potato wedges fried with bacon and onion, accompanied with
+                toast.
+              </p>
+            </div>
+            <span class="menu__price">$8.49</span>
+          </li>
+        </ul>
+
+        <ul class="menu__list" data-category="dinner">
+          <li class="menu__item">
+            <img src="./public/food_3.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Blackened Chicken Alfredo</h3>
+              <p class="description">
+                Spicy strips of chicken in a delicious sauce consisting of
+                cream, garlic, pepper, butter, and Parmesan cheese. Served on a
+                bed of fettuccine, with a side salad.
+              </p>
+            </div>
+            <span class="menu__price">$15.99</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_2.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Ma Butler’s Meatloaf</h3>
+              <p class="description">
+                Ground beef seasoned with diced onion and secret spices, and
+                baked to completion in the oven. Served with garlic mashers and
+                a side salad.
+              </p>
+            </div>
+            <span class="menu__price">$19.49</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_1.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">Ratatouille</h3>
+              <p class="description">
+                Cubed squash, eggplant, and zucchini, stewed with tomato,
+                chopped onion and pepper, chilies, and seasoned with cumin,
+                coriander, garlic, ginger, basil, and other spices. Served over
+                rice.
+              </p>
+            </div>
+            <span class="menu__price">$14.99</span>
+          </li>
+
+          <li class="menu__item">
+            <img src="./public/food_3.jpg" alt="" class="menu__img" />
+            <div class="menu__cardTxt">
+              <h3 class="heading heading--menu">
+                "Delmarva Style" Barbequed Chicken
+              </h3>
+              <p class="description">
+                Cooked to a tasty and tender perfection. Served with a campfire
+                roasted ear of corn, coleslaw or potato salad, and watermelon.
+              </p>
+            </div>
+            <span class="menu__price">$17.99</span>
+          </li>
+        </ul>
       </div>
-    </section> -->
+    </section>
   </body>
 </html>
