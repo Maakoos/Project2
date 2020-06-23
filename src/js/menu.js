@@ -1,8 +1,6 @@
 const menus = document.querySelectorAll(".menu__list");
-console.log(menus);
 
 const btns = document.querySelectorAll(".menu__btn");
-console.log(btns);
 
 btns.forEach((item) => {
   item.addEventListener("click", (e) => {

@@ -1,0 +1,15 @@
+.services {
+  text-align: center;
+
+  &__boxItems {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px 30px;
+  }
+  &__icon {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 80px;
+  }
+}
