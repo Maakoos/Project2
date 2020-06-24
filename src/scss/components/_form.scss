@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  font-family: $primaryFont;
+  color: gray;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+
+    @media (min-width: 800px) {
+      flex-basis: 30%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  &__input {
+    padding: 10px;
+    color: gray;
+    font-size: 16px;
+    font-family: $primaryFont;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    outline-color: $primaryColor;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    font-size: 18px;
+  }
+}

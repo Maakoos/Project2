@@ -19,4 +19,15 @@
     background-color: #fff;
     color: #000;
   }
+
+  &--form {
+    margin: 20px auto 0;
+    padding: 10px 60px;
+    color: $primaryColor;
+    border-color: $primaryColor;
+
+    &:hover {
+      background-color: $primaryColor;
+    }
+  }
 }
