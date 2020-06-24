@@ -1,0 +1,60 @@
+.reviews {
+  text-align: center;
+  font-family: $primaryFont;
+
+  &__quotesBox {
+    position: relative;
+
+    @media (min-width: 1200px) {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+
+  &__quoteItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+
+    &--showIn {
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  &__profession {
+    color: #cccccc;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__dots {
+    margin-top: 40px;
+  }
+
+  &__dot {
+    margin-left: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 50%;
+    // outline-color: $primaryColor;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s ease-in;
+
+    &--isActive {
+      transform: scale(1.5);
+    }
+  }
+}
