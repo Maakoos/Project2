@@ -1,5 +1,7 @@
 .restaurant {
   &__header {
+    opacity: 0;
+
     @media (min-width: 1024px) {
       margin: 0 auto;
       width: 60%;
@@ -14,5 +16,6 @@
   }
   &__img {
     width: 100%;
+    opacity: 0;
   }
 }

@@ -1,6 +1,7 @@
 .reviews {
   text-align: center;
   font-family: $primaryFont;
+  opacity: 0;
 
   &__quotesBox {
     position: relative;
