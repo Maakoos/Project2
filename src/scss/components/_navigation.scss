@@ -1,6 +1,6 @@
 .navigation {
   position: absolute;
-  top: 50px;
+  // top: 50px;
   left: 0;
   width: 100%;
   display: flex;
@@ -8,6 +8,18 @@
   align-items: center;
   /* Poniżej padding jak by co wrzucimy to w caontainer później */
   padding: 15px;
+
+  //
+  top: 0;
+  padding: 60px 15px 0;
+  transition: all 0.5s linear;
+  z-index: 999;
+
+  &--sticky {
+    position: fixed;
+    background-color: #fff;
+    padding: 20px 15px;
+  }
 
   &__logo {
     margin-left: auto;
@@ -19,6 +31,11 @@
     font-weight: 700;
     border: 2px solid #000;
     z-index: 100;
+
+    &--sticky {
+      background-color: #000;
+      color: #fff;
+    }
   }
 
   /* &__hamburger {

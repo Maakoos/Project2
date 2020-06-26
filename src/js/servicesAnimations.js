@@ -1,5 +1,4 @@
 const items = document.querySelectorAll(".services__item");
-console.log(items);
 
 let delay = 0;
 
