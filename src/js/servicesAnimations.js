@@ -11,7 +11,6 @@ const options = {
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // entry.target.classList.add("swingIn");
       setTimeout(() => {
         entry.target.classList.add("swingIn");
       }, delay);

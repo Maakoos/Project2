@@ -22,7 +22,7 @@ const allItems = [
 
 const options = {
   root: null,
-  threshold: 0.3,
+  threshold: 0.2,
   rootMargin: "0px",
 };
 

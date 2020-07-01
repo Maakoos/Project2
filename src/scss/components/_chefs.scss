@@ -3,18 +3,10 @@
   opacity: 0;
 
   &__cardsBox {
-    /*  display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 60px;
     margin-top: 80px;
-  }
-
-  &__card {
-    /* flex-basis: 45%;
-    min-width: 310px; */
   }
 
   &__img {
